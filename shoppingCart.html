@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopping</title>
+    <link rel="stylesheet" href="shoppingCart.css":>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        
+        <img  src="shoppingLogo.png" alt="not found" id="onlineShopping">
+            <form class="header2"> 
+                <label>Search </label> 
+                <input type="text" name="product" placeholder="Search for a product"/>
+            </form>
+            
+        <a href="#myAccount" id="myaccount">My account</a>
+        
+        <img class="header2 h" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAA5UlEQVRIS+2V0REBQQyGv6vAqAAVoAJUQAl0QAV0gA6UQAWUQAXoQAdMZrLc3M5edtYcL5eX25vc/l+ym0syKrasYn1iAUNgCfQ0oBOwBeRZajGAObAOqMyAXRnBAkjkRxVYAHtdTzUjee0D5xDEAojgGBDxTUFkpZADMEkFPIAG0ARknbc2cAVuQCcV8NSNoUwtv1dFUhUDqzIMv2iM3DfFyFxEXzI+gVsA5w+BQ/637t8BqUcVnUEN8P6Dn5dpfQfeHUhnbKWei+675CafB5C+Ln2+mwi5AzIB3WCKnsmJPKoHvAB2fikZ4+aueAAAAABJRU5ErkJggg=="/>
+        <div class="cart" style="display: none">
+            <img id="removeCart" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAw0lEQVRIS+2U3Q2CQBCEPzqwEyxBO5BKtQMtQTuxBDOJJCfuHyYXX+ANssy3Ozt3A52fobM+GyB1+O8WnYAb8HRa3QEH4OKNEk0g8TNwB44GROJXYA9MHiQCSEDdjwakFX+8pzCnzHZgQeTG3HkorsIMoJolRN9kSypeBSwhei+JrwXMtug/b/FfYapa1HouEWvxZlIzgJUWCXnpWjVBFMUowh+QykHzFtpCfjpo6qTrVZHelJWCbMkVjbBmA6QWdrfoBQwINBmYmmoWAAAAAElFTkSuQmCC"/>
+            <br>
+            <div id="firstItem">
+                <i id="firstHeart" class="fa-solid fa-heart"></i>                <img id="blackHatCart" src="blackHat.jpg" alt="not found" >
+                <h4>BLACK HAT</h4>
+                <div id="firstBtn">
+                    <button class="btnPlus" >+</button>
+                    <span class="qty" >0</span>
+                    <button class="btnMinus">-</button>
+                </div>
+         
+                <p >$<span class="price">30</span></p>
+                <img class="Trash" id="firstTrash" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAmElEQVRIS+2Vyw2AMAxDXydgBGATRoHJYBRGgQ3YAFSJcqBE5qNeUHttEttJWjsSH5e4PgqgAXqgMohMQAeMFlEF4AuUQqWPqd8CrHuiRUTdyxapAuo+AggJX2d/KD5LTw4QmEvpJ4lm/OvhZYA8g2MH8hbJh/nfFi1A8fBLna+cz2qRt8rhhpsFDr54e2WdyjIfiojDkwNspWYoGeOKKQUAAAAASUVORK5CYII="/>
+            </div>
+            <div id="secondItem">
+                <i id="secondHeart" class="fa-solid fa-heart"></i>
+                <img id="blackDressCart" src="blackDress.jpeg" alt="not found">
+                <h4>BLACK DRESS</h4>
+                <div id="secondBtn">
+                        <button class="btnPlus">+</button>
+                        <span class="qty" >0</span>
+                        <button class="btnMinus">-</button>                   
+                </div>
+                <p>$<span class="price">40</span></p>
+                <img class="Trash" id="secondTrash" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAmElEQVRIS+2Vyw2AMAxDXydgBGATRoHJYBRGgQ3YAFSJcqBE5qNeUHttEttJWjsSH5e4PgqgAXqgMohMQAeMFlEF4AuUQqWPqd8CrHuiRUTdyxapAuo+AggJX2d/KD5LTw4QmEvpJ4lm/OvhZYA8g2MH8hbJh/nfFi1A8fBLna+cz2qRt8rhhpsFDr54e2WdyjIfiojDkwNspWYoGeOKKQUAAAAASUVORK5CYII="/>
+
+            </div>
+            <div id="thirdItem">
+                    <i id="thirdHeart" class="fa-solid fa-heart"></i>
+                    <img id="tshirtCart" src="tshirt.webp" alt="not found">
+                    <h4>BLACK T-SHIRT</h4>
+                    <div id="thirdBtn">
+                            <button class="btnPlus">+</button>
+                            <span class="qty" >0</span>
+                            <button class="btnMinus">-</button>                   
+                    </div>
+                    <p>$<span class="price" >50</span></p>
+                    <img class="Trash" id="thirdTrash" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAmElEQVRIS+2Vyw2AMAxDXydgBGATRoHJYBRGgQ3YAFSJcqBE5qNeUHttEttJWjsSH5e4PgqgAXqgMohMQAeMFlEF4AuUQqWPqd8CrHuiRUTdyxapAuo+AggJX2d/KD5LTw4QmEvpJ4lm/OvhZYA8g2MH8hbJh/nfFi1A8fBLna+cz2qRt8rhhpsFDr54e2WdyjIfiojDkwNspWYoGeOKKQUAAAAASUVORK5CYII="/>
+
+            </div>
+            <div id="fourthItem">
+                    <i id="fourthHeart" class="fa-solid fa-heart"></i>
+                    <img id="blackCoatCart" src="blackCoat.jpg" alt="not found">
+                    <h4>BLACK COAT</h4>
+                    <div id="fourthBtn">
+                            <button class="btnPlus">+</button>
+                            <span class="qty" >0</span>
+                            <button class="btnMinus">-</button>                   
+                    </div>
+                
+                    <p>$<span class="price">60</span></p>
+                    <img class="Trash" id="fourthTrash" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAmElEQVRIS+2Vyw2AMAxDXydgBGATRoHJYBRGgQ3YAFSJcqBE5qNeUHttEttJWjsSH5e4PgqgAXqgMohMQAeMFlEF4AuUQqWPqd8CrHuiRUTdyxapAuo+AggJX2d/KD5LTw4QmEvpJ4lm/OvhZYA8g2MH8hbJh/nfFi1A8fBLna+cz2qRt8rhhpsFDr54e2WdyjIfiojDkwNspWYoGeOKKQUAAAAASUVORK5CYII="/>
+
+            </div>
+            <div id="total">
+                <h4>TOTAL</h4>
+                <P>$<span id="totalValue">0</span></P>
+            </div>
+
+        </div>
+      </header>
+    <main>
+        <figure>
+            <img src="blackHat.jpg" alt="not found" class="items">
+            <h4>BLACK HAT</h4>
+            <small>$25</small>
+            <img class="buyIcon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAA5UlEQVRIS+2V0REBQQyGv6vAqAAVoAJUQAl0QAV0gA6UQAWUQAXoQAdMZrLc3M5edtYcL5eX25vc/l+ym0syKrasYn1iAUNgCfQ0oBOwBeRZajGAObAOqMyAXRnBAkjkRxVYAHtdTzUjee0D5xDEAojgGBDxTUFkpZADMEkFPIAG0ARknbc2cAVuQCcV8NSNoUwtv1dFUhUDqzIMv2iM3DfFyFxEXzI+gVsA5w+BQ/637t8BqUcVnUEN8P6Dn5dpfQfeHUhnbKWei+675CafB5C+Ln2+mwi5AzIB3WCKnsmJPKoHvAB2fikZ4+aueAAAAABJRU5ErkJggg=="/>
+
+        </figure>
+        <figure>
+            <img src="blackBoots.jpg" alt="not found" class="items" >
+            <h4>BLACK BOOTS</h4>
+            <small>$50</small>
+            <img class="buyIcon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAA5UlEQVRIS+2V0REBQQyGv6vAqAAVoAJUQAl0QAV0gA6UQAWUQAXoQAdMZrLc3M5edtYcL5eX25vc/l+ym0syKrasYn1iAUNgCfQ0oBOwBeRZajGAObAOqMyAXRnBAkjkRxVYAHtdTzUjee0D5xDEAojgGBDxTUFkpZADMEkFPIAG0ARknbc2cAVuQCcV8NSNoUwtv1dFUhUDqzIMv2iM3DfFyFxEXzI+gVsA5w+BQ/637t8BqUcVnUEN8P6Dn5dpfQfeHUhnbKWei+675CafB5C+Ln2+mwi5AzIB3WCKnsmJPKoHvAB2fikZ4+aueAAAAABJRU5ErkJggg=="/>
+            
+        </figure>
+        <figure>
+            <img src="blackCoat.jpg" alt="not found" class="items">
+            <h4>BLACK COAT</h4>
+            <small>$60</small>
+            <img class="buyIcon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAA5UlEQVRIS+2V0REBQQyGv6vAqAAVoAJUQAl0QAV0gA6UQAWUQAXoQAdMZrLc3M5edtYcL5eX25vc/l+ym0syKrasYn1iAUNgCfQ0oBOwBeRZajGAObAOqMyAXRnBAkjkRxVYAHtdTzUjee0D5xDEAojgGBDxTUFkpZADMEkFPIAG0ARknbc2cAVuQCcV8NSNoUwtv1dFUhUDqzIMv2iM3DfFyFxEXzI+gVsA5w+BQ/637t8BqUcVnUEN8P6Dn5dpfQfeHUhnbKWei+675CafB5C+Ln2+mwi5AzIB3WCKnsmJPKoHvAB2fikZ4+aueAAAAABJRU5ErkJggg=="/>
+
+        </figure>
+        <figure>
+            <img src="tshirt.webp" alt="not found" class="items">
+            <h4>BLACK T-SHIRT</h4>
+            <small>$40</small>
+            <img class="buyIcon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAA5UlEQVRIS+2V0REBQQyGv6vAqAAVoAJUQAl0QAV0gA6UQAWUQAXoQAdMZrLc3M5edtYcL5eX25vc/l+ym0syKrasYn1iAUNgCfQ0oBOwBeRZajGAObAOqMyAXRnBAkjkRxVYAHtdTzUjee0D5xDEAojgGBDxTUFkpZADMEkFPIAG0ARknbc2cAVuQCcV8NSNoUwtv1dFUhUDqzIMv2iM3DfFyFxEXzI+gVsA5w+BQ/637t8BqUcVnUEN8P6Dn5dpfQfeHUhnbKWei+675CafB5C+Ln2+mwi5AzIB3WCKnsmJPKoHvAB2fikZ4+aueAAAAABJRU5ErkJggg=="/>
+
+        </figure>
+        <figure>
+            <img src="sunglasses.webp" alt="not found" class="items">
+            <h4>SUNGLASSSES</h4>
+            <small>$90</small>
+            <img class="buyIcon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAA5UlEQVRIS+2V0REBQQyGv6vAqAAVoAJUQAl0QAV0gA6UQAWUQAXoQAdMZrLc3M5edtYcL5eX25vc/l+ym0syKrasYn1iAUNgCfQ0oBOwBeRZajGAObAOqMyAXRnBAkjkRxVYAHtdTzUjee0D5xDEAojgGBDxTUFkpZADMEkFPIAG0ARknbc2cAVuQCcV8NSNoUwtv1dFUhUDqzIMv2iM3DfFyFxEXzI+gVsA5w+BQ/637t8BqUcVnUEN8P6Dn5dpfQfeHUhnbKWei+675CafB5C+Ln2+mwi5AzIB3WCKnsmJPKoHvAB2fikZ4+aueAAAAABJRU5ErkJggg=="/>
+
+        </figure>
+        <figure>
+            <img src="blackDress.jpeg" alt="not found" class="items">
+            <h4>BLACK DRESS</h4>
+            <small>$100</small>
+            <img class="buyIcon" id="buyIconDress" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAA5UlEQVRIS+2V0REBQQyGv6vAqAAVoAJUQAl0QAV0gA6UQAWUQAXoQAdMZrLc3M5edtYcL5eX25vc/l+ym0syKrasYn1iAUNgCfQ0oBOwBeRZajGAObAOqMyAXRnBAkjkRxVYAHtdTzUjee0D5xDEAojgGBDxTUFkpZADMEkFPIAG0ARknbc2cAVuQCcV8NSNoUwtv1dFUhUDqzIMv2iM3DfFyFxEXzI+gVsA5w+BQ/637t8BqUcVnUEN8P6Dn5dpfQfeHUhnbKWei+675CafB5C+Ln2+mwi5AzIB3WCKnsmJPKoHvAB2fikZ4+aueAAAAABJRU5ErkJggg=="/>
+
+        </figure>
+
+    </main>
+    
+    <script src="shoppingCart.js"></script>
+</body>
+</html>
