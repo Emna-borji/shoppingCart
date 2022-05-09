@@ -1,6 +1,7 @@
 var plus=document.querySelectorAll('.btnPlus');
 var minus=document.querySelectorAll('.btnMinus');
 console.log(plus);
+console.log('hello')
 console.log(minus);
 var Price=document.querySelectorAll('.price');
 console.log(Price[0].innerHTML);
